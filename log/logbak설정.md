@@ -24,10 +24,10 @@ logback은 log4j를 토대로 새롭게 만든 Logging 라이브러리이다.
 
 #### **필요한 라이브러리** 
 |  <center>라이브러리명</center> |  <center>설명</center> | 
-|:--------|:--------:|
-|logback-core.jar | <center>logback 코어. </center> |
-|logback-classic.jar | <center>slf4j에서 logback을 호출할 수 있도록 처리. </center> |
-|slf4j-api.jar | <center>cell 3x2 </center> |
-|jcl-over-slf4j.jar(선택) | <center>apache commons 로깅 -> slf4j 전환.</center> |
-|log4j-over-slf4j.jar(선택) | <center>log4j 로깅 -> slf4j 전환. </center> |
+|:--------:|:--------:|
+|logback-core.jar | logback 코어. |
+|logback-classic.jar | slf4j에서 logback을 호출할 수 있도록 처리. |
+|slf4j-api.jar | slf4j 라이브러리 |
+|jcl-over-slf4j.jar(선택) | apache commons 로깅 -> slf4j 전환. |
+|log4j-over-slf4j.jar(선택) | log4j 로깅 -> slf4j 전환. |
 
