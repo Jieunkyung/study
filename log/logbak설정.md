@@ -1,5 +1,5 @@
-#######작성일: 2018-07-30  
-#######목적: 현재 운영하고 있는 시스템의 필요 없는 로그를 줄이기 위해 logbak.xml 재설정. 
+###### 작성일: 2018-07-30  
+###### 목적: 현재 운영하고 있는 시스템의 필요 없는 로그를 줄이기 위해 logbak.xml 재설정. 
 
 참고문서 사이트 
 * <http://pshcode.tistory.com/124>
@@ -17,7 +17,7 @@ logback은 log4j를 토대로 새롭게 만든 Logging 라이브러리이다.
 
 추가적인 내용 [logback 홈페이지](http://logback.qos.ch/reasonsToSwitch.html)
 
-**logback 과 slf4j** 
+**logback 과 SLF4J** 
 
 **SLF4J**란, Simple Logging Facede for Java 의 약자로 log4J의 개발자가 logback과 함께 개발한 logging facade 즉, 로깅에 대한 인터페이스 
 모음이라고 볼 수 있다. logbak을 사용하기 위해선 slf4j를 함께 사용해야 한다.
@@ -25,7 +25,9 @@ logback은 log4j를 토대로 새롭게 만든 Logging 라이브러리이다.
 #### **필요한 라이브러리** 
 |  <center>라이브러리명</center> |  <center>설명</center> | 
 |:--------|:--------:|
-|** logback-core.jar** | <center>cell 1x2 </center> |
-|**logback-classic.jar** | <center>cell 2x2 </center> |
-|**slf4j-api.jar** | <center>cell 3x2 </center> |
+|logback-core.jar | <center>logback 코어. </center> |
+|logback-classic.jar | <center>slf4j에서 logback을 호출할 수 있도록 처리. </center> |
+|slf4j-api.jar | <center>cell 3x2 </center> |
+|jcl-over-slf4j.jar(선택) | <center>apache commons 로깅 -> slf4j 전환.</center> |
+|log4j-over-slf4j.jar(선택) | <center>log4j 로깅 -> slf4j 전환. </center> |
 
