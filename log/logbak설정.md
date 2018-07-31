@@ -1,6 +1,6 @@
 ###### 작성일: 2018-07-30  
 ###### 목적: 현재 운영하고 있는 시스템의 필요 없는 로그를 줄이기 위해 logbak.xml 재설정. 
-
+----------------------
 참고문서 사이트 
 * <http://pshcode.tistory.com/124>
 * <https://thinkwarelab.wordpress.com/2016/11/18/java%EC%97%90%EC%84%9C-logback%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%A1%9C%EA%B9%85logging-%EC%82%AC%EC%9A%A9%EB%B2%95/>
