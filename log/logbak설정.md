@@ -29,4 +29,22 @@ slf4j란, Simple Logging Facede for Java 의 약자로 log4J의 개발자가 log
 |jcl-over-slf4j.jar(선택) | apache commons 로깅 -> slf4j 전환. |
 |log4j-over-slf4j.jar(선택) | log4j 로깅 -> slf4j 전환. |
 
+#### **설정파일 위치**
+설정 파일에서는 **로그패턴**, **기록위치**, **출력레벨** 등을 필요에 맞게 설정할 수 있는 파일이다.  
+가장 먼저 설정파일을 두어야 하는 위피는 Classpath 이다. 만일 Classpath를 resource/와 같이 설정하였다면 resource/logback.xml과 같이 위치 
+시키면 된다. 
+
+적용 가능한 설정 파일 3개  
+* 1. **logback.groovy**
+* 2. **logback-test.xml**
+* 3. **logback.xml**
+
+위 세개의 파일은 순서대로 높은 우선순위를 가진다. 
+즉, LogBack은 Classpath에서 위의 설정파일을 순서대로 검색해 적용하며 상위 우선순위의 설정파일을 찾으면 하위 설정파일은 검색하지 않는다. 만일 
+3개의 파일이 모드 없다면 기존 설정을 따른다. 
+
+**ex)** logback-test.xml 과 logback.xml 파일이 둘다 있는 경우 >> logback-test.xml의 설정을 적용한다. 
+
+#### ***설정파일의 주요 항목*
+
 
